@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:ormv_widget_app/config/menu/menu_item.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -50,7 +51,7 @@ class _CustomTile extends StatelessWidget {
       subtitle: Text(menuItem.subTitle),
       trailing: Icon(Icons.arrow_forward_ios_outlined, color: color.primary),
       onTap: () {
-        //TODO: Navegar a otra pantalla
+        context.push(menuItem.link);
       },
     );
   }
