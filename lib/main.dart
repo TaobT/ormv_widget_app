@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:ormv_widget_app/config/router/app_router.dart';
 import 'package:ormv_widget_app/config/theme/app_theme.dart';
-import 'package:ormv_widget_app/presentation/screens/home/home_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -13,10 +11,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: appRouter,
       debugShowCheckedModeBanner: false,
-      theme: AppTheme(selectedColor: 1).getTheme(),
-      home: const HomeScreen()
+      theme: AppTheme(selectedColor: 1).getTheme()
     );
   }
 }
