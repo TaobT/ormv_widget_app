@@ -101,7 +101,7 @@ class _CardType2 extends StatelessWidget {
 
   @override
   Widget build  (BuildContext context) {
-    final colors = Theme.of(context).colorScheme;
+    // final colors = Theme.of(context).colorScheme;
     return Card(
       elevation: elevation,
       child: Padding(
