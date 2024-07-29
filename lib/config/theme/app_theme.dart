@@ -3,14 +3,16 @@ import 'package:flutter/material.dart';
 const colorList = <Color>[
   Colors.lightBlue,
   Colors.greenAccent,
-  Colors.pinkAccent
+  Colors.pinkAccent,
+  Colors.deepPurpleAccent,
+  Colors.greenAccent
 ];
 
 class AppTheme {
   final int selectedColor;
 
   AppTheme({
-    required this. selectedColor
+    required this.selectedColor
   }) : assert (
     selectedColor >= 0, 'Selecciona un color mayor a 0'
   ),
